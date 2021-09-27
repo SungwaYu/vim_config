@@ -1,10 +1,22 @@
-" ================== References ==================
-" Basic config: https://www.ruanyifeng.com/blog/2018/09/vimrc.html
-" Plugins: https://www.jiqizhixin.com/articles/2020-06-05-4, https://vimawesome.com/
-" Theme: https://github.com/arcticicestudio/nord-vim
-" Vim-Plug: https://github.com/junegunn/vim-plug
+
+" ================== Mapping ======================
+:imap jk <Esc>
+:nmap <Space> :
+:nmap w ge
+:nmap r e
+:nmap h <C-d>
+:nmap l <C-u>
+:nmap [ d0
+:nmap ] D
+:nmap W <C-w>
+:nmap H <C-w>h
+:nmap J <C-w>j
+:nmap K <C-w>k
+:nmap L <C-w>l
+
 
 " ================== Basic Config ======================
+" Basic config: https://www.ruanyifeng.com/blog/2018/09/vimrc.html
 " Basic Config
 set nocompatible
 syntax on
@@ -52,14 +64,15 @@ set wildmode=longest:list,full
 
 
 " ================== Vim-Plug ======================
+" Vim-Plug: https://github.com/junegunn/vim-plug
+" Plugins: https://www.jiqizhixin.com/articles/2020-06-05-4, https://vimawesome.com/
 call plug#begin('~/.vim/plugged')
 
 " Beauty
-Plug 'arcticicestudio/nord-vim'  " theme
-Plug 'itchyny/lightline.vim'  " statusline 
+Plug 'arcticicestudio/nord-vim'  " theme " Theme: https://github.com/arcticicestudio/nord-vim
+Plug 'itchyny/lightline.vim'  " statusline
 
 " Completion
-Plug 'neoclide/coc.nvim', {'branch': 'release'}  " while typing
 Plug 'jiangmiao/auto-pairs'  " pair brackets
 
 " Search
